@@ -6,11 +6,12 @@ public class Task5_KettesSzamrendszerbolTizesbe {
         long binary = 110010011L;
 
         long decimal = 0;
-        long exponent = 0;
+        long twoPower = 1;
 
         while (binary > 0) {
             int digit = (int) binary % 10;
-            decimal += (digit * Math.pow(2, exponent++));
+            decimal += (digit * twoPower);
+            twoPower *= 2;
             binary /= 10;
         }
 
