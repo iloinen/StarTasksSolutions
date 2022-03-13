@@ -10,12 +10,16 @@ public class Task1_Sakktabla {
         String letters = spaces + " ";
 
         for (char a = 'A'; a <= 'H'; a++) {
-            letters += a + " ";
+            letters += a;
+
+            if (a < 'H') {
+                letters += " ";
+            }
         }
 
         String table = letters + "\n" + spaces;
 
-        for (int i = spaces.length() + 1; i < letters.length(); i++) {
+        for (int i = spaces.length() + 1; i <= letters.length(); i++) {
             table += "-";
         }
 
