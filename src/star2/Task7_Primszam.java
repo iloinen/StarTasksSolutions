@@ -17,4 +17,13 @@ public class Task7_Primszam {
         System.out.println(number + " is prime? " + isPrime);
     }
 
+    /*
+        -1 prímszám? - true
+        2            - true
+        1            - false
+        13           - true
+        25           - false
+        Integer.MAX_VALUE  - true
+     */
+
 }

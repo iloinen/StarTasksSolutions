@@ -2,6 +2,23 @@ package star1;
 
 public class Task1_NullavalNemOsztunk {
 
+    // bossMethod() {
+    //      return countA() + countB();
+    // }
+
+    /*  UNIT TESZT
+            countA()    - egység, tesztelni!
+            countB()    - egység, tesztelni!
+     */
+
+    /* INTEGRÁCIÓS TESZT
+        bossMethod()
+
+        class Person
+            Dog dog;    // field
+        class Dog
+     */
+
     public static void main(String[] args) {
         /* eredeti megoldás:
 
@@ -17,10 +34,6 @@ public class Task1_NullavalNemOsztunk {
 
         // metódusok hívása:
 
-        System.out.println("divideNumbersAndPrint nevű metódussal:");
-        divideNumbersAndPrint(10, 2);       // kiírja: 5
-        divideNumbersAndPrint(10, 0);       // kiírja: Nullával nem osztunk!
-
         System.out.println();
         System.out.println("divideNumbers nevű metódussal:");
 
@@ -31,14 +44,6 @@ public class Task1_NullavalNemOsztunk {
         System.out.println(result2);
     }
 
-    // megoldás void metódussal
-    public static void divideNumbersAndPrint(int first, int second) {
-        if (second != 0) {
-            System.out.println(first / second);
-        } else {
-            System.out.println("Nullával nem osztunk!");
-        }
-    }
 
     // megoldás nem-void metódussal - az eredmény szöveg lesz
     public static String divideNumbers(int first, int second) {
